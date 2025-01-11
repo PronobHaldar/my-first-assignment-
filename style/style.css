@@ -1,8 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Fira Sans';
-  margin: 0px 160px 0px 160px auto;
-  width: fixed;
-  padding: 0;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -13,10 +16,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 30px;
-  padding: 24px 160px 24px 160px;
-  background-color: rgb(245, 245, 245);
-  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 header h1 {
@@ -32,6 +34,13 @@ header a {
   border-radius: 5px;
 }
 
+section,
+header,
+footer {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -39,13 +48,14 @@ header a {
   background-color: #dff5ee;
   padding: 80px 100px 80px 100px;
   border-radius: 15px;
-  margin: 20px;
+  margin: 20px 0;
 }
 
-.hero-text{
+.hero-text {
 
   text-align: left;
-} 
+}
+
 .hero h2 {
   color: rgba(14, 14, 14, 0.5);
   font-size: 18px;
@@ -84,13 +94,9 @@ header a {
   background-color: #024a29;
 }
 
-.section {
-  padding: 20px 40px;
-}
 
 .section h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  padding-top: 30px 0;
   font-size: 24px;
   color: #333;
 }
@@ -129,9 +135,10 @@ header a {
 .vision {
   text-align: left;
   margin: 40px 0;
-  
+
 }
-.vision-h2{
+
+.vision-h2 {
   font-size: 24px;
   color: #333;
 }
@@ -141,11 +148,12 @@ header a {
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
+  gap: 20px;
 }
 
+
+
 .card-2 {
-  width: 300px;
-  height: 250px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -153,9 +161,24 @@ header a {
   position: relative;
 }
 
-.card-2-h+p{
-  text-align: left;
+.vison-card1{
+  background-color: #548ff552;
+}
 
+.vison-card1 button{
+  background-color: red;
+}
+
+.vison-card2{
+  background-color: rgba(0, 128, 0, 0.438);
+}
+
+.vison-card2{
+  background-color: rgba(0, 128, 0, 0.438);
+}
+
+.card-2-h+p {
+  text-align: left;
 }
 
 
@@ -170,27 +193,32 @@ header a {
 }
 
 .quote-container {
-border: 1px solid #ccc;
-padding: 10px;
-border-radius: 5px;
-margin: 20px;
+  /* border: 1px solid #ccc; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding:25px 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-image: url();
+  background-position: top left;
+  background-size: 50px;
 }
 
 
 .author {
-text-align: right;
-font-size: smaller;
-margin-top: 10px;
+  text-align: right;
+  font-size: smaller;
+  margin-top: 10px;
 }
 
 .author-title {
-font-size: x-small;
+  font-size: x-small;
 }
 
-.opinion {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+.opinion .opinion-table{
+background-color: #fff;
+border-radius: 10px;
+padding: 20px;
 }
 
 h2 {
@@ -203,13 +231,15 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
 }
 
 th {
-  background-color: #e0f2f1; /* Light Green */
+  background-color: #e0f2f1;
+  /* Light Green */
 }
 
 
@@ -219,13 +249,11 @@ select {
   border: 1px solid #ccc;
   text-align: center;
   border-radius: 3px;
-  background-color: rgb(198, 228, 214) ;
+  background-color: rgb(198, 228, 214);
 }
 
-.container-news {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+.container-news p {
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -266,8 +294,8 @@ h2 {
 }
 
 .news-source img {
-  width: 20px;
-  height: 20px;
+  /* width: 20px; */
+  height: 30px;
   margin-right: 5px;
 }
 
@@ -287,15 +315,18 @@ h2 {
 
 .donate {
   text-align: center;
-  margin: 40px 0;
+  padding: 40px ;
 }
 
+.donate h2{
+  text-align: center;
+}
 .donate button {
   background-color: #036635;
   color: white;
   border: none;
   padding: 10px 20px;
-  margin: 5px;
+  margin-top: 20px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -307,10 +338,6 @@ h2 {
   padding: 20px;
 }
 
-.donate {
-  text-align: center;
-  padding: 20px;
-}
 
 h2 {
   margin-bottom: 20px;
@@ -326,14 +353,16 @@ h2 {
   display: inline-block;
   padding: 15px 30px;
   border-radius: 5px;
-  background-color: #e0f2f1; /* Light Green */
+  background-color: #fff;
+  /* Light Green */
   margin: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .donate-button:hover {
-  background-color: #b2dfdb; /* Hover color */
+  background-color: #b2dfdb;
+  /* Hover color */
 }
 
 .other-amount-container {
@@ -341,40 +370,42 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  padding: 0 20px;
 }
 
 .other-amount {
-  width: 300px;
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .done-button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
+  /* Green */
   color: white;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .Newsletter {
   text-align: center;
-  padding: 20px;
+  padding: 70px 20px;
   background-color: rgb(198, 228, 214);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  
+
 }
 
-h2 {
-  margin-bottom: 15px;
+.Newsletter h2 {
+  text-align: center;
 }
 
-p {
-  margin-top: 10px;
+.Newsletter p {
+  margin-bottom: 15px ;
   font-size: 0.9em;
 }
 
@@ -386,7 +417,8 @@ input[type="email"] {
 }
 
 button {
-  background-color: #2e7d32; /* Dark Green */
+  background-color: #2e7d32;
+  /* Dark Green */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -394,9 +426,12 @@ button {
   cursor: pointer;
 }
 
-.ftr  {
-  flex: none;
-  margin: 57px 0px;
+.ftr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 57px ;
   background-color: #fff;
   text-decoration: none;
 }
