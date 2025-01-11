@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Fira Sans", serif; */
+
+/* Frame 2 */
+position: absolute;
+width: 1600px;
+height: 100px;
+left: 0;
+top: 0;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 24px 160px 24px 160px;
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 160px 24px 160px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    
+    }
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+header a {
+    text-decoration: none;
+    color: #036635;
+    border: 1px solid #036635;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: left;
+    background-color: #dff5ee;
+    padding: 50px 20px;
+    border-radius: 24px;
+    margin: 80px 0px;
+}
+
+.hero h2 {
+    color: #036635;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.hero button {
+    background-color: #036635;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero button:hover {
+    background-color: #024a29;
+}
