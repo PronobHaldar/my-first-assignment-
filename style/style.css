@@ -232,7 +232,7 @@ padding:30px;
   padding:25px 15px;
   border-radius: 12px;
   margin-top: 20px;
-  background-image: url('/assets/quote-bg.png');
+  background-image: url('../assets/quote-bg.png');
   background-repeat: no-repeat;
   background-position: top 5px left 15px;
   background-size: 50px;
