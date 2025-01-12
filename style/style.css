@@ -99,7 +99,7 @@ padding:30px;
 
 }
 
-/* ......pillar of Bangladesh.... */
+/* ......pillar of Bangladesh container 1.... */
 
 .container-pillar{
   gap: 80px;
@@ -240,8 +240,6 @@ padding:30px;
 
 
 
-
-
 .author {
   text-align: left;
   color: rgba(14, 14, 14, 0.8)
@@ -301,7 +299,7 @@ select {
   background-color: rgb(198, 228, 214);
 }
 
- /* .........Recent News........ */
+ /* ......... News........ */
 
 
 
@@ -480,14 +478,11 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-
+/* <!-- ............footer....... --> */
 .ftr {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   text-align: center;
   margin-top: 50px;
-  background-color: #fff;
+  background-color:  white;
 }
 
 .ftr-im{
